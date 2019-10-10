@@ -243,6 +243,12 @@ header nav a {
 .home .welcome-container .welcome-content img {
   text-align: center;
 }
+.home .welcome-container .welcome-content .bus-content {
+  margin-top: 2%;
+}
+.home .welcome-container .welcome-content .bus-content p {
+  margin-top: 2%;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
