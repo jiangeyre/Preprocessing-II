@@ -6,6 +6,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
    
     
     .text-content {
@@ -52,13 +59,29 @@
     border-top: 2px dashed @navigation-border;
     .custom-layout(space-between, center);
 
+    @media @mobile {
+      .custom-layout(center, center);
+      flex-wrap: wrap;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        display:flex;
+        flex-direction: column;
+        width: 300%;
+      }
+
       .btn{
         margin-left: -3.33%;
         button{
           .custom-butt();
+
+          @media @mobile {
+            .custom-butt(@bg-color: darkcyan, @width: 400px, @txt-color: white);
+          }
         }
       }
     }

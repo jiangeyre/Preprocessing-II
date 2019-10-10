@@ -175,13 +175,36 @@ header {
   padding: 3%;
   margin-top: 2%;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header div {
   width: 50%;
+}
+@media (max-width: 500px) {
+  header div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  header div h1 {
+    font-size: 2.5rem;
+  }
 }
 header nav {
   width: 50%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 80%;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -205,6 +228,14 @@ header nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -242,9 +273,23 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    display: flex;
+    flex-direction: column;
+    width: 300%;
+  }
 }
 .home .content-pick .destination .btn {
   margin-left: -3.33%;
@@ -263,4 +308,21 @@ header nav a {
 .home .content-pick .destination .btn button:hover {
   background-color: white;
   color: darkcyan;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn button {
+    display: block;
+    background-color: darkcyan;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 400px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+  }
+  .home .content-pick .destination .btn button:hover {
+    background-color: white;
+    color: darkcyan;
+  }
 }

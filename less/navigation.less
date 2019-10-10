@@ -7,13 +7,33 @@ header{
     padding: @nav-padding;
     margin-top: @header-top-margin;
 
+   @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }// closes media tag
+
     div{
         width: @header-width;
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3%;
+            h1{
+                font-size: 2.5rem;
+            }
+        }
     } // this closes the div
 
     nav{
         width: @header-width;
         .custom-layout(space-between, center);
+
+        @media @mobile{
+            width: 80%;
+        }
         a{
             text-decoration: none;
             color: black;
