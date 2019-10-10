@@ -229,7 +229,7 @@ header nav a {
   justify-content: center;
 }
 .home .welcome-container .welcome-content {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
