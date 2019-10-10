@@ -345,7 +345,7 @@ header nav a {
 }
 .home .content-pick .destination .btn button {
   display: block;
-  background-color: darkcyan;
+  background-color: #17A2B8;
   margin: 0 10px 20px;
   cursor: pointer;
   width: 200px;
@@ -356,12 +356,12 @@ header nav a {
 }
 .home .content-pick .destination .btn button:hover {
   background-color: white;
-  color: darkcyan;
+  color: #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn button {
     display: block;
-    background-color: darkcyan;
+    background-color: #17A2B8;
     margin: 0 10px 20px;
     cursor: pointer;
     width: 350px;
@@ -372,6 +372,6 @@ header nav a {
   }
   .home .content-pick .destination .btn button:hover {
     background-color: white;
-    color: darkcyan;
+    color: #17A2B8;
   }
 }
