@@ -1,19 +1,5 @@
 // Navigation Styles here
 
-//variables
-@nav-font: 1.5rem;
-@nav-margin: 1%;
-@nav-padding: 3%;
-@header-top-margin: 2%;
-
-
-//parametric mixin
-.custom-layout(@justify, @align){
-    display: flex;
-    justify-content: @justify;
-    @align-content: @align;
-}
-
 //styles for header navigation
 header{
     .custom-layout(space-between, flex-end);
@@ -22,11 +8,11 @@ header{
     margin-top: @header-top-margin;
 
     div{
-        width: 50%;
+        width: @header-width;
     } // this closes the div
 
     nav{
-        width: 50%;
+        width: @header-width;
         .custom-layout(space-between, center);
         a{
             text-decoration: none;
