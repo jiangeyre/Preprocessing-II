@@ -1,1 +1,39 @@
 // Navigation Styles here
+
+//variables
+@nav-font: 1.5rem;
+@nav-margin: 1%;
+@nav-padding: 3%;
+@header-top-margin: 2%;
+
+
+//parametric mixin
+.custom-layout(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    @align-content: @align;
+}
+
+//styles for header navigation
+header{
+    .custom-layout(space-between, flex-end);
+    border-bottom: 2px dashed silver;
+    padding: @nav-padding;
+    margin-top: @header-top-margin;
+
+    div{
+        width: 50%;
+    } // this closes the div
+
+    nav{
+        width: 50%;
+        .custom-layout(space-between, center);
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: @nav-font;
+            margin: @nav-margin;
+
+        }// this closes the a tag
+    }// this closes the nav
+}// closes the header
